@@ -18,7 +18,7 @@ public class Main {
                     System.out.println("Logged in");
                 }
                 else {
-                    String enterPassword=password;
+                    String enterPassword = password;
                     System.out.println("Your password is wrong");
                     System.out.println("Dou you want to reset your password? 1-Yes 2-No");
                     int choose = input.nextInt();
@@ -26,7 +26,7 @@ public class Main {
                         System.out.println("Your new password shouldn't same with before password and shouldn't wrong.");
                         System.out.print("Enter a new password = ");
                         String newPassword = input.next();
-                        while((realPassword.equals(newPassword)) || (newPassword.equals(enterPassword))) {
+                        while((newPassword.equals(realPassword)) || (newPassword.equals(enterPassword))) {
                         System.out.println("Invalid password");
                         System.out.print("Enter a new password = ");
                         newPassword = input.next();
