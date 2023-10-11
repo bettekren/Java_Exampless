@@ -26,15 +26,11 @@ public class Main {
                         System.out.println("Your new password shouldn't same with before password and shouldn't wrong.");
                         System.out.print("Enter a new password = ");
                         String newPassword = input.next();
-                        do {
-                            System.out.println("Invalid password");
-                            System.out.print("Enter a new password = ");
-                            newPassword = input.next();
-
-
-                        }
-                        while((myPassword.equals(newPassword)) || (newPassword.equals(wrongPassword)));
-
+                        while((realPassword.equals(newPassword)) || (newPassword.equals(enterPassword))) {
+                        System.out.println("Invalid password");
+                        System.out.print("Enter a new password = ");
+                        newPassword = input.next();
+                   }
                         System.out.println("Password created");
                     }
                     else{
